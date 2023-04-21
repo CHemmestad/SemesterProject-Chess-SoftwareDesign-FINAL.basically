@@ -71,6 +71,7 @@ public class Board {
                 if((getPiece(x, y).getPieceType() == 2) && (getPiece(x, y).isWhite == piece.isWhite)) {
                     printInfo("contains check", "movePiece func", "70", getPiece(x, y));
                     castleMove(piece, getPiece(x, y));
+                    changeTurn();
                 } else {
                     stupid(piece, x, y);
                 }
